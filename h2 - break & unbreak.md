@@ -26,7 +26,13 @@
 5. ctrl+c to quit ja sitten sudo apt-get -y install python3-flask python3-flask-sqlalchemy
 6. uudelleen python3 staff-only.py
 7. tuli linkki osoitteeseen http://127.0.0.1:5000/
-8. 
+- Nettisivun avattua menin tarkastelemaan pinkoodin syöttökenttää, huomasin että input type oli asetettu numberiksi. Muistin tunnilta sen, että sen voi vain poistaa ja jättää tyhjäksi, jotta lomakkeeseen voi kirjoittaa mitä vain.
+- Pidin vuorokauden taukoa kun en osannut ratkaista admin salasanaa.
+- Ymmärrän, että kenttään syötetty teksti menee suoraan sql hakuun, mutta en löydä oikeaa tapaa kirjoittaa hakua mikä toimisi.
+- Opin, että -- tekstikentän lopussa saa sql haun lopettamaan lopun lukemisen, mikä auttaa asiassa. En silti tiedä miten yhdistäisin haluamani salasanahaun lomakkeen hakuun.
+- Selvitin, että UNION yhdistää kaksi hakua samaan, en silti saanut tehtävää millään tehtyä, joten menin lukemaan ratkaisua.
+- Ratkaisu olikin ' UNION SELECT password FROM pins--
+  - SUPERADMIN%%rootALL-FLAG{Tero-e45f8764675e4463db969473b6d0fcdd}
 ## b) Korjaa 010-staff-only haavoittuvuus lähdekoodista. Osoita testillä, että ratkaisusi toimii.
 
 ## c) Ratkaise dirfuzt-1 artikkelista Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. Tämä auttaa 020-your-eyes-only ratkaisemisessa. 
