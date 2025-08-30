@@ -12,35 +12,30 @@
   * vertikaalissa on eri ryhmiä joilla on oikeuksia riippuen heidän asemastaan. Admin on korkeammalla kuin mitä normaali käyttäjä olisi.
   * horisontaalisessa esimerkiksi käyttäjät ovat kaikki samalla rivillä oikeuksien suhteen, mutta eivät voi nähdä toistensa tietoja. Esimerkiksi pankkitilit tai verkkokaupan tilaushistoria.
 ### Karvinen 2006: Raportin kirjoittaminen
-* 
+* Raporttia kuuluu kirjoittaa tehtävää tehdessä tuoreeltaan.
+* Raportti kuuluu tehdä siistiksi ja helppolukuiseksi.
+* Kerrotaan täsmällisesti mitä on tehty ja millä koneella.
+* Ei missään nimessä saa plagioida ja lähteet kuuluu merkitä.
 
-## b) hh
-hh
+## a) Murtaudu 010-staff-only. Ks. Karvinen 2024: Hack'n Fix
+### Tehtävät tehtiin Kalissa vmware virtuaalikoneesssa (valmiiksi luotu vm Kalin nettisivulta)
+1. avasin termiknaalin Kalissa ja laitoin sudo apt-get update ja sitten sudo apt-get -y install wget unzip micro
+2. wget https://terokarvinen.com/hack-n-fix/teros-challenges.zip ja unzip teros-challenges.zip
+3. cd challenges/010-staff-only/
+4. python3 staff-only.py
+5. ctrl+c to quit ja sitten sudo apt-get -y install python3-flask python3-flask-sqlalchemy
+6. uudelleen python3 staff-only.py
+7. tuli linkki osoitteeseen http://127.0.0.1:5000/
+8. 
+## b) Korjaa 010-staff-only haavoittuvuus lähdekoodista. Osoita testillä, että ratkaisusi toimii.
 
-## c) hh
+## c) Ratkaise dirfuzt-1 artikkelista Karvinen 2023: Find Hidden Web Directories - Fuzz URLs with ffuf. Tämä auttaa 020-your-eyes-only ratkaisemisessa. 
 
-### Mikään ohjelmisto ei ole täysin tietoturvallinen.
-Niinkuin Kokkola sanoi, niin mikään ohjelmisto ei tosiaan ole täysin tietoturvallinen. Omasta mielestä näkisin myös lisänä sen, että jos jokin ohjelmisto olisikin täysin tietoturvallinen, niin ajan kuluessa kuitenkin ohjelmiston tietoturvallisuus alkaa laskemaan. Tosin siihen pisteeseen pääseminen, missä jokin olisi täysin tietoturvallinen, on varmaan todella mahdotonta päästä nykyteknologialla.
+## d) Murtaudu 020-your-eyes-only. Ks. Karvinen 2024: Hack'n Fix
 
-### Hallinnollinen tietoturva on teknisen tietoturvan onnistumisen edellytys.
-Tasapaino on tärkeää, että molemmat hoidetaan oikeissa määrin ja ymmärretysti.
-
-### Automaatiotestaus on ohjelmiston tietoturvan kannalta erittäin tärkeää.
-Tulevaisuudessa se voisi olla merkittävämpää jos tekoäly pystyisi tekemään luotettavasti testausta. Tällä hetkellä se ei olisi luotettavaa, niin olen samaa mieltä Kokkolan kanssa että automatisointi pitäisi ensin rakentaa ja silloin se on yhtä hyvää kuin itse koodaaja on ollut.
-
-### Ohjelmistoa suunniteltaessa voidaan tehdä paljonkin käyttäjän auttamiseksi tietoturvalliseen toimintaan, mutta nämä toimenpiteet vaikuttavat usein negatiivisesti käytettävyyteen.
-Olen itsekin kokenut asiaa. Esimerkiksi salasanan luomisessa jotkin sivustot estävät salasanan copypasten. Käytän salasanamanageria ja mikään ei ole ikävempää kuin yli 15 merkkiä pitkän salasanan kirjoittaminen manuaalisesti. Tavallaan tässäkin asiassa pitää löytää toiminnallisen ja tietoturvallisen väliltä hyvä keskitie.
+## e) Korjaa 020-your-eyes-only haavoittuvuus. Osoita testillä, että ratkaisusi toimii.
 
 
-### Ohjelmiston tietoturvallisuuden suunnitteluun vaikuttaa paljon se, kuinka arkaluonteisia tietoja ohjelmistolla on tarkoitus käsitellä.
-Mitä arkaluotoisempaa niin sitä tietoturvallisempi ohjelmiston täytyy olla, luultavasti ihan lainsäädännön mukaan myös.
-
-### Ohjelmistokehittäjät näkevät omat ohjelmistonsa aina merkittävästi riskialttiimpina kuin muiden tekemät ohjelmistot.
-Ei varmasti aina, mutta osaava tyyppi varmasti ymmärtää ja näkee enemmän riskejä kuin aloitteleva koodari.
-
-## d) 
-#### 1. Ympäristön kuvaus
-  - Y
 
 # Lähteet
 * Tiivitettävät:
@@ -48,5 +43,6 @@ Ei varmasti aina, mutta osaava tyyppi varmasti ymmärtää ja näkee enemmän ri
   - [Karvinen 2023](https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/)
   - [PortSwigger](https://portswigger.net/web-security/access-control)
   - [Karvinen 2006](https://terokarvinen.com/2006/raportin-kirjoittaminen-4/)
-* hh: 
+* Muut tehtävien linkit: 
+  - [Hack'n Fix](https://terokarvinen.com/hack-n-fix/)
   - []()
